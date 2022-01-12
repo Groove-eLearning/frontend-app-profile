@@ -9,13 +9,14 @@
     "url": "git+https://github.com/edx/frontend-app-profile.git"
   },
   "scripts": {
-    "build": "fedx-scripts webpack",
+    "build": "yarn merge && fedx-scripts webpack",
     "i18n_extract": "BABEL_ENV=i18n fedx-scripts babel src --quiet > /dev/null",
     "is-es5": "es-check es5 ./dist/*.js",
     "lint": "fedx-scripts eslint --ext .js --ext .jsx .",
     "snapshot": "fedx-scripts jest --updateSnapshot",
     "start": "fedx-scripts webpack-dev-server --progress",
-    "test": "fedx-scripts jest --coverage --passWithNoTests"
+    "test": "fedx-scripts jest --coverage --passWithNoTests",
+    "merge": "merge-dirs src.override src --overwrite"
   },
   "bugs": {
     "url": "https://github.com/edx/frontend-app-profile/issues"
@@ -45,6 +46,7 @@
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
     "lodash.snakecase": "4.1.1",
+    "merge-dirs": "0.2.1",
     "prop-types": "15.7.2",
     "react": "16.14.0",
     "react-dom": "16.14.0",
