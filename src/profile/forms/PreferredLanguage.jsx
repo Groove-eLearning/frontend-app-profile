@@ -71,7 +71,7 @@ class PreferredLanguage extends React.Component {
 
     return (
       <SwitchContent
-        className="mb-4"
+        className="mb-5"
         expression={editMode}
         cases={{
           editing: (
@@ -118,7 +118,7 @@ class PreferredLanguage extends React.Component {
                 showVisibility={visibilityLanguageProficiencies !== null}
                 visibility={visibilityLanguageProficiencies}
               />
-              <p data-hj-suppress className="mb-0">{languageMessages[value]}</p>
+              <p data-hj-suppress className="h5">{languageMessages[value]}</p>
             </>
           ),
           empty: (
@@ -136,7 +136,7 @@ class PreferredLanguage extends React.Component {
               <EditableItemHeader
                 content={intl.formatMessage(messages['profile.preferredlanguage.label'])}
               />
-              <p data-hj-suppress className="mb-0">{languageMessages[value]}</p>
+              <p data-hj-suppress className="h5">{languageMessages[value]}</p>
             </>
           ),
         }}

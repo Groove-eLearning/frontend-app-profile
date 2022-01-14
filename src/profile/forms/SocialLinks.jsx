@@ -98,7 +98,7 @@ class SocialLinks extends React.Component {
 
     return (
       <SwitchContent
-        className="mb-4"
+        className="mb-5"
         expression={editMode}
         cases={{
           empty: (
@@ -311,7 +311,7 @@ EditingListItem.defaultProps = {
 
 function EmptyListItem({ onClick, name }) {
   return (
-    <li>
+    <li className="mb-4">
       <EmptyContent onClick={onClick}>
         <FormattedMessage
           id="profile.sociallinks.add"

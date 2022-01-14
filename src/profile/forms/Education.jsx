@@ -57,7 +57,7 @@ class Education extends React.Component {
 
     return (
       <SwitchContent
-        className="mb-4"
+        className="mb-5"
         expression={editMode}
         cases={{
           editing: (
@@ -110,7 +110,7 @@ class Education extends React.Component {
                 showVisibility={visibilityLevelOfEducation !== null}
                 visibility={visibilityLevelOfEducation}
               />
-              <p data-hj-suppress className="mb-0">
+              <p data-hj-suppress className="h5">
                 {intl.formatMessage(get(
                   messages,
                   `profile.education.levels.${levelOfEducation}`,
@@ -134,7 +134,7 @@ class Education extends React.Component {
           static: (
             <>
               <EditableItemHeader content={intl.formatMessage(messages['profile.education.education'])} />
-              <p data-hj-suppress className="mb-0">
+              <p data-hj-suppress className="h5">
                 {intl.formatMessage(get(
                   messages,
                   `profile.education.levels.${levelOfEducation}`,

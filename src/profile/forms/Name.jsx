@@ -52,7 +52,7 @@ class Name extends React.Component {
 
     return (
       <SwitchContent
-        className="mb-4"
+        className="mb-5"
         expression={editMode}
         cases={{
           editing: (
@@ -68,7 +68,7 @@ class Name extends React.Component {
                   Once we're super sure we don't want it back, you could delete the name props and
                   such to fully get rid of it.
                   */}
-                  <p data-hj-suppress className="mb-0">{name}</p>
+                  <p data-hj-suppress className="h5">{name}</p>
                   <small className="form-text text-muted" id={`${formId}-help-text`}>
                     {intl.formatMessage(messages['profile.name.details'])}
                   </small>
@@ -92,7 +92,7 @@ class Name extends React.Component {
                 showVisibility={visibilityName !== null}
                 visibility={visibilityName}
               />
-              <p data-hj-suppress className="mb-0">{name}</p>
+              <p data-hj-suppress className="h5">{name}</p>
               <small className="form-text text-muted">
                 {intl.formatMessage(messages['profile.name.details'])}
               </small>
@@ -112,7 +112,7 @@ class Name extends React.Component {
           static: (
             <>
               <EditableItemHeader content={intl.formatMessage(messages['profile.name.full.name'])} />
-              <p data-hj-suppress className="mb-0">{name}</p>
+              <p data-hj-suppress className="h5">{name}</p>
             </>
           ),
         }}

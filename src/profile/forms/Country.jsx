@@ -61,7 +61,7 @@ class Country extends React.Component {
 
     return (
       <SwitchContent
-        className="mb-4"
+        className="mb-5"
         expression={editMode}
         cases={{
           editing: (
@@ -109,7 +109,7 @@ class Country extends React.Component {
                 showVisibility={visibilityCountry !== null}
                 visibility={visibilityCountry}
               />
-              <p data-hj-suppress className="mb-0">{countryMessages[country]}</p>
+              <p data-hj-suppress className="h5">{countryMessages[country]}</p>
             </>
           ),
           empty: (
@@ -127,7 +127,7 @@ class Country extends React.Component {
               <EditableItemHeader
                 content={intl.formatMessage(messages['profile.country.label'])}
               />
-              <p data-hj-suppress className="mb-0">{countryMessages[country]}</p>
+              <p data-hj-suppress className="h5">{countryMessages[country]}</p>
             </>
           ),
         }}

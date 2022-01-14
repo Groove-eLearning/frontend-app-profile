@@ -50,7 +50,7 @@ class Bio extends React.Component {
 
     return (
       <SwitchContent
-        className="mb-4"
+        className="mb-5"
         expression={editMode}
         cases={{
           editing: (
@@ -91,7 +91,7 @@ class Bio extends React.Component {
                 showVisibility={visibilityBio !== null}
                 visibility={visibilityBio}
               />
-              <p data-hj-suppress className="mb-0">{bio}</p>
+              <p data-hj-suppress className="lead">{bio}</p>
             </>
           ),
           empty: (
@@ -109,7 +109,7 @@ class Bio extends React.Component {
           static: (
             <>
               <EditableItemHeader content={intl.formatMessage(messages['profile.bio.about.me'])} />
-              <p data-hj-suppress className="mb-0">{bio}</p>
+              <p data-hj-suppress className="lead">{bio}</p>
             </>
           ),
         }}
