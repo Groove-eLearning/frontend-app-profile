@@ -31,8 +31,8 @@
   ],
   "dependencies": {
     "@edx/brand": "npm:@edx/brand-openedx@1.1.0",
-    "@edx/frontend-component-footer": "git+ssh://git@github.com/Groove-eLearning/frontend-component-footer.git#edutech/release/maple",
-    "@edx/frontend-component-header": "git+ssh://git@github.com/Groove-eLearning/frontend-component-header.git#edutech/release/maple",
+    "@edx/frontend-component-footer": "Groove-eLearning/frontend-component-footer.git#edutech/release/maple",
+    "@edx/frontend-component-header": "Groove-eLearning/frontend-component-header.git#edutech/release/maple",
     "@edx/frontend-platform": "1.12.7",
     "@edx/paragon": "16.6.1",
     "@fortawesome/fontawesome-svg-core": "1.2.36",
