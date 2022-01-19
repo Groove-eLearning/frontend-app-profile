@@ -29,15 +29,19 @@ import './index.scss';
 subscribe(APP_READY, () => {
   ReactDOM.render(
     <AppProvider store={configureStore()}>
-      <Header />
-      <main>
-        <Switch>
-          <Route path="/u/:username" component={ProfilePage} />
-          <Route path="/notfound" component={NotFoundPage} />
-          <Route path="*" component={NotFoundPage} />
-        </Switch>
-      </main>
-      <Footer />
+      <div className="d-flex flex-column vh-100">
+        <Header />
+        <div className="overflow-auto flex-grow-1 d-flex flex-column h-0">
+          <main className="flex-grow-1">
+            <Switch>
+              <Route path="/u/:username" component={ProfilePage} />
+              <Route path="/notfound" component={NotFoundPage} />
+              <Route path="*" component={NotFoundPage} />
+            </Switch>
+          </main>
+          <Footer />
+        </div>
+      </div>
     </AppProvider>,
     document.getElementById('root'),
   );
